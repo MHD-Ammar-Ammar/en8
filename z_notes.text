@@ -1,0 +1,12 @@
+composer require laravel/ui
+
+php artisan ui bootstrap --auth
+
+npm install && npm run dev
+
+php artisan route:list
+
+create db
+php artisan migrate
+
+php artisan make:model dashboard -mcr
