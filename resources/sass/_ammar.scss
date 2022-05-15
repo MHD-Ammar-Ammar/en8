@@ -1,0 +1,15 @@
+.card {
+    margin-bottom: 20px !important;
+
+    .card-body {
+        padding: 0 !important;
+
+        .card-text {
+            padding: 0 1rem !important;
+        }
+        .btn {
+            width: 100% !important;
+            border-radius: 0;
+        }
+    }
+}

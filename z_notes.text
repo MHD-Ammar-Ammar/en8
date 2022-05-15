@@ -10,3 +10,12 @@ create db
 php artisan migrate
 
 php artisan make:model dashboard -mcr
+
+php artisan make:factory PostFactory
+
+php artisan db:seed
+
+cmd:
+temp
+prefetch
+%temp%

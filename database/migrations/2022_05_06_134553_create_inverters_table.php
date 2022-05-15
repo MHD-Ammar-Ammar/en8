@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDashboardsTable extends Migration
+class CreateInvertersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,14 @@ class CreateDashboardsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dashboards', function (Blueprint $table) {
+        Schema::create('inverters', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->ipAddress('ip');
+
+            $table->enum('warnings', ['0', '1', '2']);
+
+            // $table->string('ip');
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ class CreateDashboardsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dashboards');
+        Schema::dropIfExists('inverters');
     }
 }

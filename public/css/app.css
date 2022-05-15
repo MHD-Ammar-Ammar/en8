@@ -11286,3 +11286,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.card {
+  margin-bottom: 20px !important;
+}
+.card .card-body {
+  padding: 0 !important;
+}
+.card .card-body .card-text {
+  padding: 0 1rem !important;
+}
+.card .card-body .btn {
+  width: 100% !important;
+  border-radius: 0;
+}
